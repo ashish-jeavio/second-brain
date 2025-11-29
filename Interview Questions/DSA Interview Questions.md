@@ -1,0 +1,1 @@
+1. How do you check a string is palindrom or not ?
