@@ -24,6 +24,7 @@
 24. How do database detect and resolve deadlock ?
 25. What are dirty reads, non-repeatable reads and phantom reads ?
 26. What is a save point ? How is it different from rollback ?
+27. SQL vs NoSQL.
 
 ---
 

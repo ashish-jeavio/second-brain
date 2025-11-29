@@ -1,6 +1,6 @@
+1. What is Javascript ? 
 2. Is javascript interpreted or compiled language ?
 3. What are the datatypes in Javascript ? 
-1. What is Javascript ? 
 4. What is the difference between `==` and `===` ?
 5. What is hoisting ?
 6. What is the difference between var, let and const ?
@@ -142,7 +142,134 @@ c1();
 36. What is debouncing and throttling?
 37. setTimeout vs setInterval
 38. What are the ES6 features you know ?
-
+39. Reduce vs Map vs Filter function 
+40. If I have a normal function, and outside of it there is just a simple variable (no outer function involved), and I access that variable inside my function — does that count as a closure? Why or why not?”
+41. Predict the output
+```
+const obj = { a: 1 };
+const ref = obj;
+obj = { a: 2 };
+console.log(ref.a);
+```
+42. Predict the output :
+```
+const arr = [1, 2, 3];
+arr[10] = 99;
+console.log(arr.length);
+console.log(arr[5]);
+```
+43. Predict the output :
+```
+console.log([1] + [1, 2]);
+console.log([] == ![]);
+console.log([] == []);
+console.log([] === []);
+```
+44. Predict the output :
+```
+async function run() {
+  console.log(1);
+  await Promise.resolve();
+  console.log(2);
+}
+setTimeout(() => console.log(3));
+run();
+console.log(4);
+```
+45. Predict the output :
+```
+function make() {
+  const out = [];
+  for (var i = 0; i < 3; i++) {
+    out.push(() => i);
+  }
+  return out;
+}
+const fns = make();
+console.log(fns[0](), fns[1](), fns[2]());
+```
+46. Predict the output :
+```
+const user = { name: "A" };
+Object.freeze(user);
+user.name = "B";
+console.log(user.name);
+```
+47. Predict the output :
+```
+const obj = {
+  val: 1,
+  inc() {
+    return () => {
+      this.val++;
+    };
+  }
+};
+const fn = obj.inc();
+fn();
+console.log(obj.val);
+```
+48. Predict the output :
+```
+function A() {}
+A.prototype.x = 1;
+const a1 = new A();
+A.prototype = { x: 2 };
+const a2 = new A();
+console.log(a1.x, a2.x);
+```
+49. Predict the output :
+```
+function A() {}
+A.prototype.x = 1;
+const a1 = new A();
+A.prototype.x = 2;
+const a2 = new A();
+console.log(a1.x, a2.x);
+```
+50. Predict the output : 
+```
+function calc(a = b, b = 10) {
+  return a + b;
+}
+console.log(calc());
+```
+51 Predict the output :
+```
+function* g1() {
+  yield 1;
+  yield 2;
+}
+function* g2() {
+  yield* g1();
+  yield 3;
+}
+console.log([...g2()]);
+```
+52. Predict the output : 
+```
+const target = { x: 1 };
+const proxy = new Proxy(target, {
+  get(t, p) {
+    if (p === "x") return t.x * 10;
+    return Reflect.get(t, p);
+  }
+});
+console.log(proxy.x, target.x);
+```
+53. What is call, apply, bind ?
+54. What is prototype inheritance ?
+55. Write your own map function : `Array.prototype.myMap = function(cb) { … }`
+56. Predict the output :
+```
+function T() {}
+const t1 = new T();
+const t2 = { __proto__: T.prototype };
+console.log(t1 instanceof T);
+console.log(t2 instanceof T);
+```
+57. What is event delegation ?
+58. 
 
 ---
 Resources :
@@ -150,4 +277,12 @@ Resources :
 https://youtu.be/eiC58R16hb8?si=gqzp_p5MthCBuc5P
 
 https://youtu.be/vKJpN5FAeF4?si=vlfqtFJe39MgU_Mb
+
+https://youtu.be/AOPmqw9scfc?si=Z_smWyRnRt_hxNfd
+
+https://youtu.be/IJ6EgdiI_wU?si=N5f4eTGjwZfVem6X
+
+---
+
+Notes : Every function that accesses an outer variable is a closure.
 
