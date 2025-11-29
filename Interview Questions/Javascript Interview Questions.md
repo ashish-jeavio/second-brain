@@ -271,6 +271,8 @@ console.log(t2 instanceof T);
 57. What is event delegation ?
 58. 
 
+`Note : Remaining : Generator functions, Proxy & Reflect`
+
 ---
 Resources :
 
@@ -281,6 +283,8 @@ https://youtu.be/vKJpN5FAeF4?si=vlfqtFJe39MgU_Mb
 https://youtu.be/AOPmqw9scfc?si=Z_smWyRnRt_hxNfd
 
 https://youtu.be/IJ6EgdiI_wU?si=N5f4eTGjwZfVem6X
+
+yet to watch : https://youtu.be/TGGoiJBuv-Y?si=GtxDch0sEZghrqaq , https://youtu.be/9jl1lhFylJs?si=OCUHH9NdnR50be5d
 
 ---
 
