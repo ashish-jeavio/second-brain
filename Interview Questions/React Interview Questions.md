@@ -79,3 +79,4 @@ setTimeout(() => console.log("C:", value), 0);
 22. What is pure component ?
 23. What is HOC Design pattern ? 
 24. Why can't we make useEffect function async ?
+25. What is `React.memo` ?
