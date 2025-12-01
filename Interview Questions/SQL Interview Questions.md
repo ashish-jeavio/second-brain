@@ -1,8 +1,8 @@
 1. What is SQL ?
 2. What is the difference between WHERE and HAVING ?
-3. How do you find duplicates in a table?
+3. How do you find duplicates in a table? and then how to delete them ?
 4. What is the difference between INNER JOIN and LEFT JOIN?
-5. What is Common Table Expression and window function ? what they are used for ?
+5. What is a CTE (Common Table Expression) and Window Functions in SQL? what they are used for ?
 6. Write a query to find the second highest salary from a table, Given a table Salaries :
 ```txt
 | id | salary |
@@ -23,3 +23,12 @@
 15. What happens if you SELECT a column not in the GROUP BY clause?
 16. What happens if you use GROUP BY without an aggregate function?
 17. What is the difference between COUNT(*) and COUNT(column_name)?
+18. What is a transaction in SQL, and why is it important?
+19. How to get unique records from the table without using distinct keywords.
+20. What is a Self Join in SQL?
+21. Explain the use of the COALESCE function in SQL.
+22. What is the difference between IN and EXISTS in SQL?
+23. How can you improve the performance of SQL queries?
+24. What is a View in SQL, and why is it used?
+25. What is a Cross Join in SQL?
+26. What are Stored Procedures and why are they useful?
