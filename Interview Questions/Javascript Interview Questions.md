@@ -290,6 +290,7 @@ console.log(" " - 1);
 console.log(" 10 " - 5);
 console.log("10" / "2");
 ```
+60. Explain event bubbling and event capturing.
 
 `Note : Remaining : Generator functions, Proxy & Reflect`
 

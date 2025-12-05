@@ -80,3 +80,4 @@ setTimeout(() => console.log("C:", value), 0);
 23. What is HOC Design pattern ? 
 24. Why can't we make useEffect function async ?
 25. What is `React.memo` ?
+26. CSR vs SSR vs SSG vs ISR ? How can we decide which to use ?
