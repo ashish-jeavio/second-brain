@@ -44,7 +44,3 @@ console.log("sync");
 ```
 13. Why does Node.js have both nextTick and microtasks? What problem does nextTick solve?
 14. How do you handle heavy CPU-bound tasks without blocking the event loop ?
-
----
-
-https://youtu.be/Vdpx-9Oehdk?si=l7K8DueJvkEfmoDF

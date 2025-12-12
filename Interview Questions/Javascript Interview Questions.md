@@ -139,7 +139,7 @@ c1();
 33. Consider this object `test: { a:'1', b:{c:'2', d:'3'} }`. Now, define a function `getProperty(test, path)` such that if `path` is `"b.c"`, it prints `'2'` because `test.b.c` is `'2'`.
 34. Implement a deep clone : deepClone({ a: 1, b: { c: 2 } })
 35. Implement a deep equal : deepEqual(obj1, obj2)
-36. What is debouncing and throttling?
+36. What is debouncing and throttling and rate-limiting ?
 37. setTimeout vs setInterval
 38. What are the ES6 features you know ?
 39. Reduce vs Map vs Filter function 

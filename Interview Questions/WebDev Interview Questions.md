@@ -8,8 +8,3 @@
 8. Difference between HTTP/1.1, HTTP/2, and HTTP/3 (QUIC).
 9. Explain TCP vs UDP in simple terms.
 10. What is HSTS and why is it important?
-
----
-
-https://youtu.be/j9QmMEWmcfo?si=2GamWjYPkLPWNNYu
-
